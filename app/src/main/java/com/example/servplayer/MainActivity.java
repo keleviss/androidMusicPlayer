@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // ShowMessage("Activity onCreate");
+        ShowMessage("Activity onCreate");
 
         noMusicTextView = findViewById(R.id.no_music_available);
         songTitleTextView = findViewById(R.id.currentSongTitle);
@@ -236,11 +236,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             cursor.close();
         }
 
-        if (songsList.size() == 0) {
+        if (songsList.isEmpty()) {
             noMusicTextView.setVisibility(View.VISIBLE);
         } else {
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
-            recyclerView.setAdapter(new SongListAdapter(songsList, getApplicationContext(), (SongListAdapter.OnSongClickListener) this));
+            recyclerView.setAdapter(new SongListAdapter(songsList, getApplicationContext(), this));
         }
     }
 
