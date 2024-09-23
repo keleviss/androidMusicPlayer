@@ -4,7 +4,7 @@
 
 This Android application is a simple yet functional music player that allows users to play audio files stored on their device. The app features a single-page interface with a recycler view to display the list of available audio files and basic playback controls.
 
-You can download a pre-released version of the app on your Android Device right here -> (Serv_Player_v0.1.apk)[]
+You can download a pre-released version of the app on your Android Device right here -> (Serv_Player_v0.1.apk)[https://github.com/keleviss/androidMusicPlayer/releases/tag/Serv_Player_v0.1]
 
 ## Features
 
