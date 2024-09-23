@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ShowMessage("Activity onCreate");
+        // ShowMessage("Activity onCreate");
 
         noMusicTextView = findViewById(R.id.no_music_available);
         songTitleTextView = findViewById(R.id.currentSongTitle);
